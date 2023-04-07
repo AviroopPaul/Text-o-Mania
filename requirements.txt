@@ -1,0 +1,9 @@
+Flask==2.0.0
+gunicorn
+spacy==3.0.9
+sumy==0.11.0
+bs4==0.0.1
+nltk==3.8.1
+click==7.1.2
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz#egg=en_core_web_sm >=3.2.2,<3.3.0
+urllib3
