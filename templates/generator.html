@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <title>Sentiment Analyser</title>
+    <title>Text Generator</title>
   </head>
   <body
     style="
@@ -57,7 +57,7 @@
       </button>
     </nav>
 
-    <form method="POST" action="/generateresult">
+    <form method="POST" action="/generatorResult">
       <!-- Main Section -->
       <br />
       <br />
@@ -68,7 +68,7 @@
         <div class="d-inline-flex p-5">
           <textarea
             class="form-control"
-            name="inputText"
+            name="prompt"
             rows="1"
             style="
               background-color: #242847;
@@ -77,8 +77,30 @@
               padding: 2rem;
             "
           ></textarea>
-          <br />
         </div>
+
+        <div style="align-items: center; width: 500px; margin: 0 auto">
+          <br />
+          <label for="length" style="text-align: left"
+            >Please specify the length of the generated text</label
+          >
+          <input
+            type="number"
+            name="length"
+            style="
+              background-color: #242847;
+              color: white;
+              background-image: linear-gradient(to right, black, #070d29);
+              padding: 2rem;
+              width: 100%;
+              height: 30px;
+              margin-right: 100px;
+            "
+            size="3"
+          />
+        </div>
+        <br>
+        
       </div>
       <br />
       <center>
